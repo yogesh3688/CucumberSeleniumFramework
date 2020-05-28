@@ -8,8 +8,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue = {"StepDefination","com.base.generatehook"},
 		dryRun = false,
 		monochrome = true,
-		//plugin = {"pretty","html:Results/HTMLReport"}
-		plugin = {"pretty","html:Results/HTMLReport","junit:Results/JUnitReport/index.xml"}
+		plugin = {"pretty","json:target/report.json"}
+		//plugin = {"pretty","html:Results/HTMLReport","junit:Results/JUnitReport/index.xml"}
 		//tags = {"@regression"}  // will execute @regreesion scenarios from feature file
 		)
 
