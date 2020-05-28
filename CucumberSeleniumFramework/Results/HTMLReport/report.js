@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6631659500,
+  "duration": 6423075100,
   "status": "passed"
 });
 formatter.scenario({
@@ -28,6 +28,11 @@ formatter.step({
   "name": "Click on \"Learn Java\" link",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 5,
+  "name": "Click on \"Home\" link",
+  "keyword": "Then "
+});
 formatter.match({
   "arguments": [
     {
@@ -38,7 +43,7 @@ formatter.match({
   "location": "W3SchoolStepDef.w_Navigate_to(String)"
 });
 formatter.result({
-  "duration": 8006965800,
+  "duration": 5852445799,
   "status": "passed"
 });
 formatter.match({
@@ -51,11 +56,24 @@ formatter.match({
   "location": "W3SchoolStepDef.click_on_link(String)"
 });
 formatter.result({
-  "duration": 1034283300,
+  "duration": 863329299,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Home",
+      "offset": 10
+    }
+  ],
+  "location": "W3SchoolStepDef.click_on_link(String)"
+});
+formatter.result({
+  "duration": 1042469300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 684757200,
+  "duration": 702811400,
   "status": "passed"
 });
 });

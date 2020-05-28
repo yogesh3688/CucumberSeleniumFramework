@@ -2,6 +2,7 @@ package StepDefination;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.base.services.DriverServices;
 import com.base.utils.IReader;
@@ -14,7 +15,8 @@ public class W3SchoolStepDef {
 	private WebDriver driver;
 	private DriverServices service;
 	private IReader readConfigFile;
-	
+	private WebDriverWait wait;
+
 	public W3SchoolStepDef(DriverServices service) {
 		this.service = service;
 		this.driver = service.getDriver();
@@ -27,8 +29,10 @@ public class W3SchoolStepDef {
 	}
 
 	@Then("^Click on \"([^\"]*)\" link$")
-	public void click_on_link(String arg1) throws Throwable {
-		service.getObjButtonHelper().clickButton(By.xpath("//*[contains(text(),'Learn Machine Learning')]"));
+	public void click_on_link(String linkText) throws Throwable {
+		//service.getObjButtonHelper().clickButton(By.xpath("//*[contains(text(),'Learn Machine Learning')]"));
+		service.getObjButtonHelper().clickButton(By.xpath("//*[contains(text(),'"+linkText+"')]"));
+		
 	}
 
 }

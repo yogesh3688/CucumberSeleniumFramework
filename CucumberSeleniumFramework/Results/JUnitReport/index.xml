@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.357666">
-<testcase classname="Verify W3School Website" name="To test Learn Java" time="16.357666">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.884131">
+<testcase classname="Verify W3School Website" name="To test Learn Java" time="14.884131">
 <system-out><![CDATA[Given W_Navigate to "https://www.w3schools.com/"............................passed
 Then Click on "Learn Java" link.............................................passed
+Then Click on "Home" link...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

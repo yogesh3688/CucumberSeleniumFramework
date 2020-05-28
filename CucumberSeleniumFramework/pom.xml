@@ -28,7 +28,7 @@
 					<reuseForks>false</reuseForks> <!-- it will create new VM and will not use any exist -->
 					<testFailureIgnore>true</testFailureIgnore> <!-- The execution will continue even after test failure -->
 					<includes> <!-- specify the file name -->
-						<include>KiteRunner.java</include>
+						<include>W3SchoolRunner.java</include>
 					</includes>
 					<suiteXmlFiles>
 						<!-- <suiteXmlFile>${testng.xml.loc}/testng.xml</suiteXmlFile> -->
